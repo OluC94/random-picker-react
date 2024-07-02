@@ -1,9 +1,10 @@
+import RandomPicker from "./components/RandomPicker";
 
 
 function App() {
     return (
         <div>
-            <h1>App component</h1>
+            <RandomPicker />
         </div>
     );
 }
