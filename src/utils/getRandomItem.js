@@ -5,6 +5,6 @@
  * @returns string
  */
 export function getRandomItem(inputArr) {
-
-    return ""
+    const randomIndex = Math.floor(Math.random() * inputArr.length)
+    return inputArr[randomIndex]
 }

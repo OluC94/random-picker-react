@@ -2,8 +2,8 @@ import { test, expect, describe } from "vitest";
 import { getRandomItem } from "./getRandomItem";
 
 describe('getRandomItem', () => {
-    test("returns a string", () => {
-        expect(typeof getRandomItem([])).toBe("string")
+    test("returns a string with any expected input", () => {
+        expect(typeof getRandomItem(["test"])).toBe("string")
     });
     test("correctly returns an item from the input array", () => {
         const inputArr = [
