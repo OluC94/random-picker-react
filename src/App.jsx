@@ -1,6 +1,5 @@
 import RandomPicker from "./components/RandomPicker";
 
-
 function App() {
     return (
         <div>
