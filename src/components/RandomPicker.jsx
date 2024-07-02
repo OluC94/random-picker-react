@@ -26,11 +26,16 @@ export default function RandomPicker() {
                 value={itemData}
                 onChange={handleTextInput}
                 name="items"
+                data-testid="input-area"
             />
 
             <button onClick={handleRandomClicked}>Random</button>
 
-            {<h2>{selectedItem || "Click the button"}</h2>}
+            {
+                <h2 data-testid="selected-word">
+                    {selectedItem || "Click the button"}
+                </h2>
+            }
         </main>
     );
 }
