@@ -6,10 +6,12 @@ export default function RandomPicker() {
 
     function handleTextInput(event) {
         setItemData(event.target.value)
+        
     }
 
-    function handleRandomClicked(event){
-        console.log(itemData)
+    function handleRandomClicked(){
+        const inputList = itemData.split("\n")
+        console.log(inputList)
     }
 
     return (<main>
