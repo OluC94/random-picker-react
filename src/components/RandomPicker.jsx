@@ -1,16 +1,32 @@
+import { useState } from "react"
+
 export default function RandomPicker() {
+    const [itemData, setItemData] = useState("")
+    const [selectedItem, setSelectedItem] = useState("")
+
+    function handleTextInput(event) {
+        setItemData(event.target.value)
+    }
+
+    function handleRandomClicked(event){
+        console.log(itemData)
+    }
+
     return (<main>
         <h1>Random Picker</h1>
 
-        <p>Choices</p>
+        <p>Choices:</p>
 
-        <textarea>
+        <textarea 
+            value={itemData}
+            onChange={handleTextInput}
+            name="items"
+        />
 
-        </textarea>
 
-        <button>Random</button>
+        <button onClick={handleRandomClicked}>Random</button>
 
-        <h2>Output</h2>
+        {<h2>{selectedItem || "Click the button"}</h2>}
 
     </main>)
 }
