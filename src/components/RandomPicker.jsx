@@ -29,7 +29,11 @@ export default function RandomPicker() {
                 data-testid="input-area"
             />
 
-            <button onClick={handleRandomClicked}>Random</button>
+            <button 
+                onClick={handleRandomClicked}
+                data-testid="button"
+            
+            >Random</button>
 
             {
                 <h2 data-testid="selected-word">
